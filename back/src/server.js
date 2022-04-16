@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
-// SAUCISSE
-const PORT = 3000
+
+const PORT = process.env.PORT || 3000;
+
+app.use(express.json());
+
 app.listen(PORT, ()=> {console.log(`Server listenning on port : ${PORT}`)});
