@@ -15,8 +15,9 @@ router.post('/', async (req, res) => {
         if(result.length === 0) {
             return res.send("Le compte n'existe pas !");
         } else {
+            const user = result[0];
             const token = jwt.sign(result[0], process.env.JWTKEY);
-            res.send(token);
+            res.send({user, token});
         }
 
     } catch(err) {
