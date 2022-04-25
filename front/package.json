@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.3.1"
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "parcel": "^2.3.1",
+    "process": "^0.11.10"
   }
 }
